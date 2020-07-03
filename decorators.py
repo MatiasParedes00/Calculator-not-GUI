@@ -1,6 +1,6 @@
 def decorator1 (text):
     print ("=" * len (text))
-    print (text + "\n")
+    print (text)
 
 def decorator2 (text):
     print (text)
@@ -8,6 +8,6 @@ def decorator2 (text):
 
 def print_result (result):
     if result:
-        print (result)
-    else:
-        print ("The operation is imvalid")
+        print (str(result) + "\n")
+    elif result != False:
+        print ("\nUno de lo operandos esta fuera de rango.")

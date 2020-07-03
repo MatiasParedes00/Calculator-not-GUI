@@ -23,23 +23,23 @@ arcocoseno = lambda a: mt.acos(a) if a < 1 and -1 < a else None
 arcoseno = lambda a: mt.asin(a) if a < 1 and -1 < a else None
 
 def single_input_command (operator):
-    inp = input("Enter the number: ")
+    inp = input("Ingrese el numero: ")
     try:
         inp = float(inp)
         return operator (inp)
     except ValueError:
-        print ("Algo que ingresaste no es aceptado como valor numerico o no es válido para la función.\n")
+        print ("\nAlgo que ingresaste no es aceptado como valor numerico")
         print ("Por favor, revise lo que ingresaste")
-        return None
+        return False
     
 def doble_input_command (operator):
-    inp1 = input("Enter the number: ")
-    inp2 = input("Enter the number: ")
+    inp1 = input("Ingrese el primer numero: ")
+    inp2 = input("Ingrese el segundo numero: ")
     try:
         inp1 = float(inp1)
         inp2 = float(inp2)
         return operator (inp1, inp2)
     except ValueError:
-        print ("Algo que ingresaste no es aceptado como valor numerico.\n")
+        print ("Algo que ingresaste no es aceptado como valor numerico")
         print ("Por favor, revise lo que ingresaste")
         return None
