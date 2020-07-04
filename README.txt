@@ -1,4 +1,4 @@
-#===ES===
+===ES===
 Este es un primer experimento para agregar a mi portafolio de trabajo.
 Lo que hice es recrear un mini-proyecto de programación de cuando estaba aprendiendo, con mejoras significativas en cuanto a legibilidad y estilo en relación a la versión anterior.
 
